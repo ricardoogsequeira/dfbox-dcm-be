@@ -1,0 +1,98 @@
+from enum import StrEnum
+
+
+class BusinessArea(StrEnum):
+    BEFS = "BEFS"
+    NETWORKS = "NETWORKS"
+    CLIENT_SOLUTIONS = "CLIENT_SOLUTIONS"
+    RGA = "RGA"
+
+
+class ProjectType(StrEnum):
+    BIG_BET = "BIG_BET"
+    QUICK_WIN = "QUICK_WIN"
+    NINJA = "NINJA"
+    STANDARD = "STANDARD"
+
+
+class LifecycleState(StrEnum):
+    IDENTIFIED = "IDENTIFIED"
+    DISCOVERY = "DISCOVERY"
+    EXECUTION = "EXECUTION"
+    HANDOVER = "HANDOVER"
+
+
+class Priority(StrEnum):
+    CRITICAL = "CRITICAL"
+    HIGH = "HIGH"
+    MEDIUM = "MEDIUM"
+    LOW = "LOW"
+
+
+class DeliveryModel(StrEnum):
+    INTERNAL = "INTERNAL"
+    PARTNER = "PARTNER"
+    HYBRID = "HYBRID"
+
+
+class DependencyType(StrEnum):
+    ARCHITECTURE = "ARCHITECTURE"
+    INFRA = "INFRA"
+    SECURITY = "SECURITY"
+    BUSINESS = "BUSINESS"
+    FACTORY = "FACTORY"
+
+
+class DependencyStatus(StrEnum):
+    OPEN = "OPEN"
+    IN_PROGRESS = "IN_PROGRESS"
+    BLOCKED = "BLOCKED"
+    RESOLVED = "RESOLVED"
+    CANCELLED = "CANCELLED"
+
+
+class ImpactLevel(StrEnum):
+    LOW = "LOW"
+    MEDIUM = "MEDIUM"
+    HIGH = "HIGH"
+    CRITICAL = "CRITICAL"
+
+
+class ProjectRole(StrEnum):
+    PRODUCT_OWNER = "PRODUCT_OWNER"
+    DIGITAL_MANAGER = "DIGITAL_MANAGER"
+    SCRUM_MASTER = "SCRUM_MASTER"
+    COORDINATOR = "COORDINATOR"
+    ARCHITECT = "ARCHITECT"
+    AI_COMPETENCE_CENTER_REPRESENTATIVE = "AI_COMPETENCE_CENTER_REPRESENTATIVE"
+    DESIGNER = "DESIGNER"
+
+
+class Discipline(StrEnum):
+    BACKEND = "BACKEND"
+    FRONTEND = "FRONTEND"
+    CLOUD = "CLOUD"
+    DATA_SCIENCE = "DATA_SCIENCE"
+
+
+class ResourceRoleType(StrEnum):
+    BACKEND_DEVELOPER = "BACKEND_DEVELOPER"
+    FRONTEND_DEVELOPER = "FRONTEND_DEVELOPER"
+    CLOUD_ENGINEER = "CLOUD_ENGINEER"
+    DATA_SCIENTIST = "DATA_SCIENTIST"
+
+
+class ResourceStatus(StrEnum):
+    AVAILABLE = "AVAILABLE"
+    LIMITED = "LIMITED"
+    UNAVAILABLE = "UNAVAILABLE"
+
+
+class AllocationType(StrEnum):
+    PROJECT = "PROJECT"
+    SUPPORT = "SUPPORT"
+    COMMUNITY = "COMMUNITY"
+    INNOVATION = "INNOVATION"
+    TRAINING = "TRAINING"
+    HOLIDAY = "HOLIDAY"
+    ABSENCE = "ABSENCE"
